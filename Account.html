@@ -26,6 +26,44 @@
         #nav a:hover {
         background-color: rgb(20, 71, 75);
         }
+              body {
+        font-family: Arial;
+        }
+
+        * {
+        box-sizing: border-box;
+        }
+
+        form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+        }
+
+        form.example button { 
+        float: left;
+        width: 15%;
+        padding: 9px;
+        background: #2196F3;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none;
+        cursor: pointer;
+        }
+
+        form.example button:hover {
+        background: #0b7dda;
+        }
+
+        form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
     </style>
   </head>
   <body>
@@ -35,7 +73,13 @@
         <li><a href="#">相关网站</a></li>
         <li><a href="#">关于此页</a></li>
         <li><a href="https://mxbofangqi.github.io/homepage/E-mail.html">联系作者</a></li>
-        <li><a href="https://mxbofangqi.github.io/homepage/Account.html">作者视频号</a></li>   
+        <li><a href="https://mxbofangqi.github.io/homepage/Account.html">作者视频号</a></li>
+          <li>
+          <form class="example" action="/">
+            <input type="text" placeholder="搜索... [此框还在测试中...]" name="search">
+            <button type="submit"><i class="fa fa-search">搜索</i></button>
+          </form>
+      </li>
         </ul>   
         <div style="background-color: #ffffff; text-align: center;">
             <img alt="账号" src="https://s1.328888.xyz/2022/07/27/DP1oC.png" width="450px" height="150px">
